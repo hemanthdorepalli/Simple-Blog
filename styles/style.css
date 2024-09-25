@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+  #user-id-input{
+    width: 200px; 
+    padding: 10px;
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    font-size: 16px; 
+    margin-right: 10px; 
+    transition: border-color 0.3s ease;
+  }
+  main {
+    padding: 20px;
+  }
+  
+  #posts-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .post-card {
+    background-color: whitesmoke;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .post-card h3 {
+    font-size: 1.2em;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: blue;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  .close-button {
+    float: right;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  footer{
+    background-color: rgb(22, 7, 7);
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    #posts-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  

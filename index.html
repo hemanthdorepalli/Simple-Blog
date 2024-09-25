@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Blog</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Simple Blog</h1>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section user ID -->
+    <section id="input-section">
+      <label for="user-id-input">Enter User ID:</label>
+      <input type="number" id="user-id-input" placeholder="User ID (e.g., 1)">
+      <button id="fetch-posts-btn">Search Posts</button>
+    </section>
+
+    <!-- Posts Section -->
+    <section id="posts">
+      <h2>Posts</h2>
+      <div id="posts-list"></div>
+    </section>
+
+    <!-- Post Detail Modal -->
+    <div id="post-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" id="close-modal">&times;</span>
+        <h2 id="post-title"></h2>
+        <p id="post-body"></p>
+        <button id="back-button">Back to Posts</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <nav>
+      <h3>Design by Hemanth</h3>
+    </nav>
+  </footer>
+
+  <!-- scripts file -->
+  <script src="scripts/app.js"></script>
+</body>
+</html>
